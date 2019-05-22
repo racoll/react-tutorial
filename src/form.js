@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './form.scss';
 
 class Form extends Component {
 	constructor(props) {
@@ -30,7 +31,8 @@ class Form extends Component {
 
 		return (
 			<form>
-				<label>Name</label>
+				<label
+					className={styles.heading}>Name</label>
 				<input
 					type="text"
 					name="name"
